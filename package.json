@@ -1,0 +1,17 @@
+{
+  "name": "angularalbum",
+  "version": "1.0.0",
+  "description": "Photo Album on AngularJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/b3na/angularjsalbum"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-http-server": "^1.4.3",
+    "angular-route": "^1.6.9"
+  }
+}

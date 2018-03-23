@@ -1,0 +1,11 @@
+<div class="row" ng-cloak>
+    <div class="col-sm-6 col-md-4" ng-repeat="album in albums | limitTo:-3" >
+      <div class="thumbnail" ng-style="backgroundColor($index)">
+        <img ng-src="{{album.url}}" alt="{{album.title}}">
+        <div class="caption">
+          <h3>Album:</h3>
+          <p>{{album.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
