@@ -3,69 +3,78 @@
 <!-- define angular app -->
 <html ng-app="angularAlbum">
 
-<head>
-    <link rel="stylesheet" href="/css/style.css" />
-
-  <!-- SPELLS -->
-  <script src="/node_modules/angular/angular.js"></script>
-  <script src="/node_modules/angular-route/angular-route.min.js"></script>
-  <script src="/js/app.js"></script>
+<head>    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="/css/masterstyle.css" />
+    <link rel="stylesheet" href="/css/rmx-home.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- SPELLS -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/js/app.js"></script>
 </head>
 
 <body ng-controller="AlbumsController">
-
-        <nav class="cmx-main-nav">
-                <div class="cmx-logo">
-                    <a class="cmx-logo__link" href="index.html">
-                        <img alt="Brand" src="img/logo-white.png">
-                    </a>
-                </div>
-                <!-- end cmx-logo -->
-                <div class="cmx-main-nav__items">
-                    <div class="cmx-main-nav__item-separator"></div>
-                    <div class="cmx-main-nav__item user-menu">
-                        <div class="cmx-user-menu__icon popout__toggle" data-popout-target="#userMenuPopout">
-                            <div class="cmx-main-nav__icon cmx-main-nav__icon--inverted">MW</div>
-                        </div>
-                        <div id="userMenuPopout" class="cmx-user-menu__container popout popout--bottom-left popout--with-border hidden">
-                            <div class="cmx-user-menu__user">
-                                <div class="cmx-main-nav__icon main-nav__icon--regular cmx-user-menu__user-icon">MW</div>
-                                <div class="cmx-user-menu__user-details">
-                                    <h4 class="cmx-user-menu__user-name">Michael Wassermann</h4><span class="cmx-user-menu__user-email">michael.wassermann@cemex.com</span>
-                                </div>
-                                <!-- end .user-menu-details -->
-                            </div>
-            
-                            <div class="cmx-language accordion open" >
-                                <div class="cmx-language__heading accordion__heading" role="button">
-                                    Language
-                                </div>
-                                <div class="cmx-language__options accordion__data">
-                                    <ul class="cmx-language__options-list">
-                                        <li class="cmx-language__options-item active" role="button">
-                                            English
-                                        </li>
-                                        <li class="cmx-language__options-item" role="button">
-                                            Español
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- end .language-selector -->
-                            <div class="cmx-user-menu__sign-out">
-                                <a class="cmx-user-menu__sign-out-link" href="#">Sign Out</a>
-                            </div>
-                            <!-- end .user-menu__sign-out -->
-                        </div>
-                        <!-- end .user-menu-container -->
+    
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="nav-container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Index.aspx">
+                            <img alt="Brand" src="img/logo_cemex_white.png">
+                        </a>
                     </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="Index.aspx">Services</a>
+                            </li>
+                            <li>
+                                <a href="About.aspx">About</a>
+                            </li>
+                            <li>
+                                <a href="FAQ.aspx">FAQ's</a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="Profile.aspx"> Profile </a>
+                            </li>
+                            <li id="hdr_ApprovalDashboard" style="display: none;">
+                                <a href="Approval-Dashboard.aspx"> Approval Dashboard </a>
+                            </li>
+                            <li id="hdr_AgentDashboard">
+
+                            </li>
+                            <li class="hidden-xs">
+                                <div class="vertical-line"></div>
+                            </li>
+                            <li class="hidden-xs">
+                                <div class="avatar">
+                                    <div class="avatar-circle">
+                                        <span id="headerUserInitials" class="initials">JB</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hidden-xs">
+                                <a id="headerUserName" href="Profile.aspx" style="padding-left: 0px;">Jesus Benavides</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
-                <!-- end .main-nav__items -->
-                <div class="cmx-sub-nav-loader"></div>
-                <!-- end .sub-nav-loader -->
+                <!-- /.container-fluid -->
             </nav>
     <div ng-view></div>
-  </div>
+</div>
 </body>
 
 </html>
