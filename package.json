@@ -1,7 +1,7 @@
 {
-  "name": "angularalbum",
+  "name": "global-networks-sp",
   "version": "1.0.0",
-  "description": "Photo Album on AngularJS",
+  "description": "Global Networks Sharepoint Site",
   "main": "index.js",
   "repository": {
     "type": "git",
